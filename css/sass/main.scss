@@ -1,9 +1,5 @@
-$primary-text-color: #757575;
-$title-text-color:  #212121;
-$accent-color:#2196F3;
-$background-color:#FFFFFF;
-$accent-bg-color: rgba(47, 48, 58, 0.8);
-$background-footer: #2F303A;
-$text-adress-color: rgba(255, 255, 255, 0.6);
-$backgraund-second:#F5F4FA;
-$color-border: #ECECEC;
+@import'./utils/vars';
+@import'./base/normalize';
+@import'./utils/placeholders';
+@import'./utils/mixins';
+@import'./components/page-heder';
