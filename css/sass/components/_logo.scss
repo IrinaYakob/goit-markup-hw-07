@@ -1,0 +1,15 @@
+.logo{
+    font-family: Raleway;
+    font-weight: bold;
+}
+.logo{
+    @extend %logo;
+}
+.logo-web{
+ color:$accent-color;
+
+}
+.logo-studio{
+
+color:$title-text-color;
+}

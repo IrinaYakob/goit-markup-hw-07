@@ -1,0 +1,29 @@
+.page-header{
+    background-color: $background-color;
+      
+}
+.page-header{
+    &.container{
+    @include centeredFlex (flex);
+    justify-content:space-between;
+}
+}
+.list{
+    @extend %list;
+}
+.link{
+    @extend %link;
+}
+.container{
+    background-color: $background-color;
+   
+}
+.container{
+    @extend %container;
+}
+.container{
+    &.main-nav{
+        display: flex;
+        align-items: center;
+    }
+}
