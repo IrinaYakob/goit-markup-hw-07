@@ -4,8 +4,9 @@
 }
 .page-header{
     &.container{
-    @include centeredFlex (flex);
+    display: flex;
     justify-content:space-between;
+    align-items: center;
 }
 }
 .list{

@@ -16,8 +16,9 @@
 .heading-title{
     display: none;
 }
-.list{
-    &.element{
+.list-element{
+    @extend %list;
+     &.element{
         width: (1200px - 90px) /4;
         margin-right: 30px; }
    
@@ -40,6 +41,7 @@
     &-text{
         margin-top: 10px;
         width: 270px;
+        max-height: 120px;
         font-size: 14px;
         line-height: 1,7px;
     }
