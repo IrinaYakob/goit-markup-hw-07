@@ -6,7 +6,7 @@
 .section{
     &-title{
         @extend %title;
-        color:$title-text-color ;
+        color: $title-text-color ;
         font-size: 14px;
         line-height: 1.14;
         margin-top: 30px;
@@ -18,14 +18,13 @@
 }
 .list{
     &.element{
-        min-width: 270px;
-        width:  calc((100% - 90px) /4);
-        margin-right: 30px;
+         width: calc((100% - 90px) /4);
+        margin-right: 30px; }
    
     &:last-child{
         margin-right: 0;
     }
-
+}
 .element{
 &-logo{
     display: flex;
@@ -33,15 +32,15 @@
     align-items: center;
     height: 120px;
     min-width: 270px;
-    background-color:$backgraund-second;
+    background-color: $backgraund-second;
     border-radius: 4px;
 }
 }
 .element{
-&-text{
-    margin-top: 10px;
-    width: 270px;
-    font-size: 14px;
-    line-height: 1,7px;
-}
+    &-text{
+        margin-top: 10px;
+        width: 270px;
+        font-size: 14px;
+        line-height: 1,7px;
+    }
 }

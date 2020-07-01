@@ -1,0 +1,25 @@
+.team{
+    @extend %section;
+    background-color: $backgraund-second;
+    &.container{
+        background-color: $backgraund-second;
+    }
+}
+.team{
+    &-work{
+        background-color: $background-color;
+        border-bottom: 4px;
+    }
+}
+.team{
+    &-title{
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 50px;
+        color: $title-text-color; 
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center; 
+    }
+}

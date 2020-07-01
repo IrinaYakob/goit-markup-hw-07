@@ -328,7 +328,7 @@ border-radius: 4px;
   }
   
   /* чем мы занимаемся */
-  .feature.no-padding{
+  .feature{
       padding-top: 94px;
       padding-bottom: 94px;
       margin-top: 0;
@@ -350,7 +350,7 @@ border-radius: 4px;
   .list .item{
       margin-right: 30px;
   
-      width: calc((100% - 60px) /3)
+      width: calc((100% - 60px) /3);
   }
       
   .list .item:last-child{
