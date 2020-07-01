@@ -2,6 +2,7 @@
 @import'./base/normalize';
 @import'./utils/placeholders';
 @import'./utils/mixins';
+@import'./components/body';
 @import'./components/page-heder';
 @import'./components/logo';
 @import'./components/site-nav';
@@ -9,3 +10,5 @@
 @import'./components/section';
 @import'./components/feature';
 @import'./components/team';
+@import'./components/client';
+@import'./components/footer';

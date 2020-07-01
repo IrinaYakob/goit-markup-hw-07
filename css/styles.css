@@ -427,9 +427,8 @@ border-radius: 4px;
   }
   .team-text{
       display: block;
-  
-     padding-top: 30px;
-     margin: 0;
+      padding-top: 30px;
+       margin: 0;
       font-weight: 500;
       font-size: 16px;
       line-height: 1,18;
@@ -465,7 +464,7 @@ border-radius: 4px;
       border-radius: 4px;
       margin-right: 30px;
       width: calc((100% - 90px) /4)
-      ba
+      
   }
   
   .list-team .foto{

@@ -18,10 +18,10 @@
 }
 .list{
     &.element{
-         width: calc((100% - 90px) /4);
+        width: (1200px - 90px) /4;
         margin-right: 30px; }
    
-    &:last-child{
+    &.element:last-child{
         margin-right: 0;
     }
 }
