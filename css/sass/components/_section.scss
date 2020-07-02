@@ -1,14 +1,13 @@
 .section{
     @extend %section;
     outline:  1px solid $color-border;
+   
     
 }
 .section{
     &-title{
         @extend %title;
         color: $title-text-color ;
-        font-size: 14px;
-        line-height: 1.14;
         margin-top: 30px;
         margin-bottom: 0;
     }
@@ -16,16 +15,23 @@
 .heading-title{
     display: none;
 }
-.list-element{
+.list{
+    &-element{
     @extend %list;
-     &.element{
-        width: (1200px - 90px) /4;
-        margin-right: 30px; }
+    display: flex;
+    margin-right: 0;
+}
+  
+}
+.element{
+        width: (1170px - 90px) /4;
+        margin-right: 30px;
+        }
    
-    &.element:last-child{
+.element:last-child{
         margin-right: 0;
     }
-}
+
 .element{
 &-logo{
     display: flex;

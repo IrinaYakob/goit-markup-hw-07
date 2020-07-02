@@ -1,32 +1,38 @@
 .feature{
         @extend %section;
+       
     
 }
+
 .feature{
     &-title{
-        margin-top: 0;
-        margin-bottom: 50px;
         color: $title-text-color;
-        font-weight: bold;
+        @extend %text;
         font-size: 36px;
         line-height: 1.16;
-        text-align: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+        
   }
 
     }
      
 .list{
-    &.item{
-        margin-right: 30px;
+    @extend %list;
+    width: 370px;
+    display: flex;
+    margin-right: 0;
   
-        width: calc(100% - 60px) /3;
-    }
 }
-.list{
-    &.item:last-child{
+.item{      
+       margin-right: 30px;
+       width: (1200px - 60px) /3;
+    }
+
+.item:last-child{
         margin-right: 0;
     }
-}
+
 .item{
     &-img{
         display: block;
@@ -36,23 +42,19 @@
 }
 .feature{
     &.link{
+       
         color: $title-text-color;
     }
 }
 .button{
     &.primary{
-        display: block;
+        @extend %button-two;
         min-width: 370px;
         height: 70px;
-    font-size: 14px;
-    line-height: 1,14;
-    text-align: center;
+        @extend %title;
         text-transform: uppercase;
         padding-top: 27px;
         padding-bottom: 27px;
-        margin: 0;
-    
-        color: $background-color;
         background-color: $accent-bg-color;
     }
 }

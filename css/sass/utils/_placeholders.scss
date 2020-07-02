@@ -27,15 +27,27 @@
     padding-bottom: 94px;
     margin: 0;
 }
-%title{
-    margin: 0;
-}
+
 %button{
     color:$background-color ;
     background-color:$accent-color ;
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
+}
+%button-two{
+    display: block;
+    color: $background-color;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+
+
+}
+%title{
+    font-size: 14px;
+    line-height: 1,14;
+    margin: 0;
 }
 %text{
     font-weight: bold;
