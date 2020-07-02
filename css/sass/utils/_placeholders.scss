@@ -42,3 +42,14 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
+%transition{
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transform:  translate(-50%, -50%) scale(1);
+}
+%transition-two{
+    transition-property:  color;
+      
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); 
+}
