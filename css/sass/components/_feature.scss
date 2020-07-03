@@ -19,7 +19,7 @@
      
 .list{
     @extend %list;
-    width: 370px;
+    // width: 370px;
     display: flex;
     margin-right: 0;
   
@@ -41,7 +41,7 @@
     }
 }
 .feature{
-    &.link{
+    .link{
        
         color: $title-text-color;
     }
