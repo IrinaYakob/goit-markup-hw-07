@@ -1,0 +1,22 @@
+.container-portfolio{
+    @extend %section;
+    border-top: 1px solid #ECECEC;
+}
+.content{
+    &-title{
+    display: none;}
+}
+.content{
+    &-list{
+     display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      margin-top: 0;
+      margin-bottom:50px;
+      padding: 0;
+    }
+}
+.list{
+   .item{margin-left: 8px;} 
+  }

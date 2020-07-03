@@ -15,6 +15,7 @@
 }
 .brands{
     display: flex;
+    padding: 0;
 }
 .brand{
     display: flex;
@@ -26,7 +27,7 @@
 }
 .brand{
     margin-right: 30px;
-    width: calc((100% - 150px) /6)
+    width: (1170px - 150px) /6;
   
 }
 .brand:last-child{
@@ -35,7 +36,6 @@
 .brand{
     &-link{
         display: flex;
-     
         justify-content: center;
         background-color: $background-color;
         border: 1px solid #AFB1B8;
@@ -45,9 +45,10 @@
         text-align: center;
         align-items: center;
         color:#AFB1B8 ; 
-        transition-property:   background-color,color,  border;
-        transition-duration: 250ms;
-        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); 
+        @extend %transition-two;
+        // transition-property:   background-color,color,  border;
+        // transition-duration: 250ms;
+        // transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); 
          
     }
 }

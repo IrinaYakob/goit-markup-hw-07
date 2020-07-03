@@ -279,7 +279,7 @@ summary {
   text-decoration: none;
 }
 
-.section, .feature, .team, .client {
+.section, .feature, .team, .client, .container-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
   margin: 0;
@@ -320,6 +320,15 @@ summary {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+}
+
+.brand-link {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .body {
@@ -627,7 +636,7 @@ summary {
 
 .item {
   margin-right: 30px;
-  width: 380px;
+  width: 370px;
 }
 
 .item:last-child {
@@ -813,6 +822,7 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 .brand {
@@ -827,7 +837,7 @@ summary {
 
 .brand {
   margin-right: 30px;
-  width: calc((100% - 150px) /6);
+  width: 170px;
 }
 
 .brand:last-child {
@@ -851,12 +861,6 @@ summary {
       -ms-flex-align: center;
           align-items: center;
   color: #AFB1B8;
-  -webkit-transition-property: background-color,color,  border;
-  transition-property: background-color,color,  border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .brand-icon {
@@ -1264,5 +1268,29 @@ summary {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+}
+
+.container-portfolio {
+  border-top: 1px solid #ECECEC;
+}
+
+.content-title {
+  display: none;
+}
+
+.content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */
