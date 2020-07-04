@@ -15,8 +15,24 @@
       margin-top: 0;
       margin-bottom:50px;
       padding: 0;
+      
     }
 }
-.list{
-   .item{margin-left: 8px;} 
-  }
+   .items{
+       margin-left: 8px;
+       
+    } 
+
+.button-second{
+        @extend %button-second;
+        &:hover,
+        &:focus{
+            color: $background-color;
+            background-color: $accent-color;
+        }
+    }
+
+.button-socond{
+    @extend %transition-two;
+}
+

@@ -19,14 +19,14 @@
      
 .list{
     @extend %list;
-    // width: 370px;
+   
     display: flex;
     margin-right: 0;
   
 }
 .item{      
        margin-right: 30px;
-       width: (1170px - 60px) /3;
+    //    width: (1170px - 60px) /3;
     }
 
 .item:last-child{

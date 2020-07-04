@@ -7,6 +7,7 @@
 .section{
     &-title{
         @extend %title;
+        font-weight: bold;
         color: $title-text-color ;
         margin-top: 30px;
         margin-bottom: 0;
@@ -45,6 +46,7 @@
 }
 .element{
     &-text{
+        color: $primary-text-color;
         margin-top: 10px;
         width: 270px;
         max-height: 120px;

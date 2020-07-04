@@ -1,0 +1,124 @@
+.container{
+    &-portfolio{
+        padding-bottom: 0;
+    }
+}
+.container-card{
+    @extend %container;
+    padding-bottom: 94px;
+}
+.img{
+    &-foto{
+     display: block;
+      max-width: 100%;
+      height: auto;
+    }
+}
+.list-card{
+&.card{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: (1170 - 60px) /3;
+}
+}
+.list-card{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+         list-style: none;
+     text-decoration: none;
+    }
+    .list-card{
+        .card:hover{
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+     }
+      .card:nth-child(3n){
+          margin-right: 0;
+      }
+      .card:nth-last-child(-n + 3){
+         margin-bottom: 0; 
+      } 
+    }
+    .card{
+        display: flex;
+        width: 370px; 
+
+        justify-content:center;
+        align-items: center;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        border: 1px solid #EEEEEE;
+        border-radius: 5px;
+    }
+    .card{
+        &-link{
+            @extend %link;
+   
+        }
+    }
+    .text{
+        &-title{
+            display: flex;
+            margin-top: 20px;
+            padding-left: 24px;
+            color: $title-text-color;
+           
+           
+                   
+        }    
+    }
+   
+    .title-text{
+       display: block;
+
+            color: $background-color; 
+                }  
+        
+    
+    
+    .content{
+        &-text{
+           color: $primary-text-color;
+           display: block;
+           margin-top: 4px;
+           margin-bottom: 20px;
+           padding-left: 24px;
+           padding-right: 24px;
+           font-style: normal;
+           font-weight: normal;
+           font-size: 16px;
+           line-height: 1,87; 
+           
+        }
+    }
+    .product-thumb{
+            display: block;
+            position: relative;
+             overflow: hidden;
+        }
+    
+    .thumb-overly{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+           padding: 63px 24px;
+            height: 294px;
+            width: 370px;
+      background: rgba(33, 150, 243, 0.9);
+      transform: translateY(100%);
+      transition-duration: 250ms ;
+      transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+
+    .card{
+        &-link:hover .thumb-overly{
+            transform: translateY(0) ;
+            opacity: 1;}
+    }
+    // .content .title{
+    //     font-size: 16px;
+    //     line-height: 1.9;
+        
+    //     }
