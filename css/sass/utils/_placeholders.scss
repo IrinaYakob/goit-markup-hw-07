@@ -22,7 +22,12 @@
   text-decoration: none;
 }
 
-
+%studio{
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: $background-color;
+}
 %section {
     padding-top: 94px;
     padding-bottom: 94px;

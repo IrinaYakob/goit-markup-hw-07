@@ -263,17 +263,17 @@ summary {
   width: 1200px;
 }
 
-.list, .list-element {
+.list, .list-element, .social-list .social {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.link, .site-nav .link, .social-link, .checkbox-link, .card-link {
+.link, .site-nav .link, .checkbox-link, .card-link {
   text-decoration: none;
 }
 
-.logo, .footer .logo-studio {
+.logo {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
@@ -301,7 +301,7 @@ summary {
   margin: 0;
 }
 
-.section-title, .button.primary {
+.section-title, .button.primary, .adress .contacts, .title-press {
   font-size: 14px;
   line-height: 1,14;
   margin: 0;
@@ -322,7 +322,7 @@ summary {
           transform: translate(-50%, -50%) scale(1);
 }
 
-.brand-link, .button-socond {
+.brand-link, .social-link, .button-socond {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -909,15 +909,19 @@ summary {
   background-color: #2F303A;
 }
 
-.footer-main .adress {
-  display: block;
+.footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 48px;
   padding-bottom: 28px;
   margin: 0;
-}
-
-.footer .logo-studio {
-  color: #FFFFFF;
 }
 
 .adress {
@@ -926,7 +930,13 @@ summary {
   line-height: 1.7;
 }
 
-.adress.link:hover, .adress.link:focus {
+.call-item {
+  list-style: none;
+  color: #FFFFFF;
+}
+
+.adress .link:hover,
+.adress .link:focus {
   color: #FFFFFF;
 }
 
@@ -934,6 +944,40 @@ summary {
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.4;
+}
+
+.call-item .link {
+  color: #FFFFFF;
+}
+
+.call-item {
+  margin-top: 9px;
+}
+
+.call-list {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.call {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.call-list {
+  display: block;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1,7;
+  letter-spacing: 0.03em;
+}
+
+.adress .contacts {
+  background-color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
 }
 
 .social-list .social {
@@ -967,25 +1011,17 @@ summary {
   display: flex;
   margin: 0;
   padding: 0;
-  text-decoration: none;
 }
 
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0;
-  margin-right: 39px;
-  margin-left: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: var #FFFFFF;
-  background-color: #2F303A;
+.social:hover, .social:focus {
+  background-color: #2196F3;
 }
 
-.social-list .social:last-child {
-  margin-right: 0;
+.social-icon {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  fill: currentColor;
 }
 
 .social-link {
@@ -1003,36 +1039,41 @@ summary {
   background: rgba(255, 255, 255, 0.1);
   color: #FFFFFF;
   border-radius: 50%;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social:hover, .social:focus {
-  background-color: #2196F3;
+.title-press {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  fill: currentColor;
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.call {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-
-.call-list {
-  margin: 0;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1,7;
+.authors {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  color: #757575;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .backdrop {
