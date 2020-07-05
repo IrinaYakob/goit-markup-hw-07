@@ -1,0 +1,33 @@
+.footer-form{
+   display: flex;
+   border: none; 
+ }
+ .footer-input{
+      @extend %footer-input;
+     }
+.button-footer{
+@extend %btn-footer;
+}
+.button-footer::after{
+    
+    display: inline-block;
+    content:"" ;
+    width: 24px;
+    height:24px;
+background-image: url(../images/icon-send.svg);
+background-position: center;
+background-repeat: no-repeat;
+padding-top: 13px;
+padding-bottom: 13px;
+padding-left: 10px;
+margin-left: 10px;
+margin-right: 28px;
+  }
+.logo-send{
+    @extend%logo-send;
+}
+.social-work{
+    display: inline-block;
+    margin-left: 94px;
+    padding-top: 56px;
+}
